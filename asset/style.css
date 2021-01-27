@@ -3,7 +3,43 @@
 }
 body{
     margin: 0;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #343d4b;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* INFO CITY */
+
+.bloc-info{
+    padding: 5rem;
+    background-image: url('francesco-ungaro-UO9hm7iBh68-unsplash.jpg');   
+}
+.bloc-detail{
+    padding: 5rem;
+    background-color: #222831;
+}
+.information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.what{
+    margin-right: 50px;
+}
+.other-day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+.day-1{
+    margin: 0px 20px;
 }
