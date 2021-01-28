@@ -48,7 +48,7 @@ get('https://www.prevision-meteo.ch/services/json/paris').then(function(data){
 
     date.textContent = data.current_condition.date;
     hour.textContent = data.current_condition.hour;
-    city.textContent = data.city_info.name;
+    city.textContent = data.city_info.name  ;
     pays.textContent = data.city_info.country;
     
     /* BLOC TMP */
@@ -59,7 +59,7 @@ get('https://www.prevision-meteo.ch/services/json/paris').then(function(data){
 
     /* BLOC DETAIL */
 
-    presure.textContent = data.current_condition.pressure + " % ";
+    presure.textContent = data.current_condition.pressure + " HPA ";
     humidity.textContent = data.current_condition.humidity + " % ";
     wind.textContent = data.current_condition.wnd_spd + " k/hm ";
 
@@ -80,7 +80,6 @@ get('https://www.prevision-meteo.ch/services/json/paris').then(function(data){
     icon4.src = data.fcst_day_4.icon
     day4.textContent = data.fcst_day_4.day_long
     tmpDay4.textContent = data.fcst_day_4.tmin + " °C "
-
 
 })
 
