@@ -3,10 +3,9 @@
 
 /* BLOC INFO */
 
+const day0 = document.querySelector('.day0');
 const date = document.querySelector('.date');
-const hour = document.querySelector('.hour');
 const city = document.querySelector('.city');
-const pays = document.querySelector('.pays');
 
 /* BLOC TEMPERATURE */
 
@@ -46,10 +45,9 @@ get('https://www.prevision-meteo.ch/services/json/paris').then(function(data){
 
     /* BLOC INFO */
 
+    day0.textContent = data.fcst_day_0.day_long
     date.textContent = data.current_condition.date;
-    hour.textContent = data.current_condition.hour;
-    city.textContent = data.city_info.name  ;
-    pays.textContent = data.city_info.country;
+    city.textContent = data.city_info.name + " , " + data.city_info.country ;
     
     /* BLOC TMP */
 
